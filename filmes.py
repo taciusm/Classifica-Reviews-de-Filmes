@@ -16,7 +16,7 @@ if __name__ == "__main__":
     # that is used when n_jobs != 1 in GridSearchCV
 
     # the training data folder must be passed as first argument
-    movie_reviews_data_folder = r"C:\Users\taciusm\Downloads\data"
+    movie_reviews_data_folder = r"./data"
     dataset = load_files(movie_reviews_data_folder, shuffle=False)
     print("n_samples: %d" % len(dataset.data))
 
