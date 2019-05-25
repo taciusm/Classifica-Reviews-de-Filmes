@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri May 24 22:58:43 2019
-
 @author: taciusm
 """
 
@@ -33,7 +29,7 @@ if __name__ == "__main__":
 
     # TASK: Build a vectorizer / classifier pipeline that filters out tokens
     # that are too rare or too frequent
-    svc = Pipeline([('vect' , TfidfVectorizer(analyzer='word', min_df=3, max_df=0.95)), ('ann',MLPClassifier(activation = 'tanh'))])
+    svc = Pipeline([('vect' , TfidfVectorizer(analyzer='word', min_df=3, max_df=0.95)), ('ann',MLPClassifier(activation = 'relu'))])
     
 
     # TASK: Build a grid search to find out whether unigrams or bigrams are
